@@ -1,4 +1,4 @@
-PeterBOT
+PeterBOT (Version 2.0)
 
 PeterBOT ist ein Minecraft Cracked Bot der innerhalb wenniger Sekunden einige Bots auf einen Server holen kann.
 
