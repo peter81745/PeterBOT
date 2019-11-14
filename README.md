@@ -8,6 +8,8 @@ PeterBOT ist ein Minecraft Cracked Bot der innerhalb wenniger Sekunden einige Bo
 
 PeterBot is a Minecraft Cracked Bot which creats Bots that join a specific Server in seconds
 
+- For testing purposes only
+
 <a href="https://workupload.com/file/zYTxdNcG">Download</a>
 </body>
 </html>
