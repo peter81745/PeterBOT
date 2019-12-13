@@ -2,14 +2,12 @@
   <head>
   </head>
   <body>
-    <h1>PeterBOT (Version 2.0)</h1>
+    <h1>PeterBot</h1>
 
-PeterBOT ist ein Minecraft Cracked Bot der innerhalb wenniger Sekunden einige Bots auf einen Server holen kann.
+With PeterBot you can try how many bots your minecraft Server can handle
 
-PeterBot is a Minecraft Cracked Bot which creats Bots that join a specific Server in seconds
 
-- For testing purposes only
-
-<a href="https://workupload.com/file/zYTxdNcG">Download</a>
+<h2>PeterBot (Version 2.0):</h2>
+<h3>Windows: </h3><a href="https://workupload.com/file/zYTxdNcG">Download</a>
 </body>
 </html>
