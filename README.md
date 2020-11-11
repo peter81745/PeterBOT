@@ -1,3 +1,4 @@
+[![Github All Releases](https://img.shields.io/github/downloads/peter12908/PeterBOT/total.svg)]()
 <html>
   <head>
   </head>
