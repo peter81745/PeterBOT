@@ -1,4 +1,5 @@
-[![Github All Releases](https://img.shields.io/github/downloads/peter12908/PeterBOT/total.svg)]()
+[![Github All Releases](https://img.shields.io/github/downloads/peter12908/PeterBOT/total.svg)]() 
+<a href="https://www.youtube.com/watch?v=G-uGHHArtXs"><img alt="YouTube Video Views" src="https://img.shields.io/youtube/views/G-uGHHArtXs?style=social"></a>
 <html>
   <head>
   </head>
