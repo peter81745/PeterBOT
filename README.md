@@ -7,9 +7,9 @@
 
 PeterBot a Minecraft Bot Tool
 
-<h2>PeterBot (Version 5.0.0-alpha)</h2>
+<h2>PeterBot (Version 5.0.1)</h2>
 <a href="https://www.youtube.com/watch?v=95oSpmI41tk"><img alt="YouTube Video Views" src="https://img.shields.io/youtube/views/95oSpmI41tk?style=social"></a>
-<h3>Windows: <a href="https://github.com/peter12908/PeterBOT/releases/download/5.0.0/PeterBotV5-win32-x64.zip">Download</a></h3>
+<h3>Windows: <a href="https://github.com/peter12908/PeterBOT/releases/download/5.0.1/PeterBot-win32-x64.zip">Download</a></h3>
 
 <h2>PeterBot (Version 4.0-alpha)</h2>
 <a href="https://www.youtube.com/watch?v=G-uGHHArtXs"><img alt="YouTube Video Views" src="https://img.shields.io/youtube/views/G-uGHHArtXs?style=social"></a>
