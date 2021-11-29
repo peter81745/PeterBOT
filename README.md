@@ -6,7 +6,10 @@
     <h1>PeterBot</h1>
 
 PeterBot a Minecraft Bot Tool
-
+    <Hr>
+    <h3>Attention</h3>
+    This Bot is made to be only used on your own server. Do not use this tool on another Server. This tool is made for testing the "own" Server!!!
+    <Hr>
 <h2>PeterBot (Version 5.0.2)</h2>
 <a href="https://www.youtube.com/watch?v=95oSpmI41tk"><img alt="YouTube Video Views" src="https://img.shields.io/youtube/views/95oSpmI41tk?style=social"></a>
 <h3>Windows: <a href="https://github.com/peter12908/PeterBOT/releases/download/5.0.2/PeterBot-win32-x64.zip">Download</a></h3>
