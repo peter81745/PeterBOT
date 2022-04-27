@@ -1,0 +1,5 @@
+chat=>Hello
+sleep=>5000
+chat=>i leave in 5 second
+sleep=>5000
+disconnect=>y
