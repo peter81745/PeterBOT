@@ -1,0 +1,27 @@
+<html lang="de" dir="ltr">
+  <html>
+  <head>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <title>BotManager</title>
+  </head>
+  <body style="background-color: #212121; color:white;">
+    <div class="container">
+      <h1 class="text-white">BotManager</h1><br>
+      <button class="btn btn-primary" onclick="refreshLog();">Refresh Log</button>
+      <div class="col-12" id="log">
+        Loading...
+      </div>
+    </div>
+    <script>
+      function refreshLog() {
+        window.BMWindow.refresh();
+      }
+      refreshLog();
+
+      window.BMWindow.receive("BMLog", (log) => {
+        document.getElementById("log").innerHTML = "<pre>"+log+"</pre>";
+      });
+    </script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

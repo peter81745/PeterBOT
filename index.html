@@ -1,0 +1,164 @@
+<html>
+<head>
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/custom.css">
+<title>PeterBot V5.1-alpha01</title>
+</head>
+<body style="background-color: #212121; color: white"><div class="se-pre-con"></div>
+  <div class="container">
+    <br>
+    <h2>PeterBot V5.1-alpha01 - Minecraft Bot</h2>
+	<p id="pb"><i>PeterBot still can have some bugs, if you find a bug contact me on my discord server</i></p>
+  <script>
+  async function checkPBVersion() {
+    const url = 'https://raw.githubusercontent.com/peter12908/PeterBOT/master/version.txt'
+    const response = await fetch(url);
+    const data = await response.text();
+    if (!data.startsWith("5.1.0-alpha01")) {
+      document.getElementById("pb").innerHTML = 'A newer Version of PeterBot is available. Download it at https://github.com/peter12908/PeterBOT';
+    }
+  }
+  checkPBVersion();
+  </script>
+        <form id="submit">
+          <div class="row">
+            <div class="col-9 mb-3">
+              <label for="ip" class="form-label">IP or Domain</label>
+              <input type="text" class="form-control" id="ip" placeholder="127.0.0.1" required>
+            </div>
+            <div class="col-3 mb-3">
+              <label for="port" class="form-label">Port</label>
+              <input type="number" class="form-control" id="port" placeholder="25565" required min="1" max="65535">
+            </div>
+            <div class="col-6 mb-3">
+              <label for="alts" class="form-label">Minecraft (Names[cracked] or Accounts[premium])</label>
+              <input type="file" class="form-control" id="alts" accept=".txt" required>
+            </div>
+            <div class="col-6 mb-3">
+              <label for="proxy" class="form-label">SOCKS4 Proxy (leave empty if you dont want to use proxies)</label>
+              <input type="file" class="form-control" id="proxy" accept=".txt">
+            </div>
+            <div class="col-6 mb-3">
+              <label for="version" class="form-label">Version</label>
+              <select class="form-select" id="version" aria-label="">
+                <!--<option value="false" selected>Auto Version</option>-->
+          			<option value="1.8">1.8</option>
+          			<option value="1.9">1.9</option>
+          			<option value="1.10">1.10</option>
+          			<option value="1.10.1">1.10.1</option>
+          			<option value="1.10.2">1.10.2</option>
+          			<option value="1.11">1.11</option>
+          			<option value="1.11.2">1.11.2</option>
+          			<option value="1.12">1.12</option>
+          			<option value="1.12.1">1.12.1</option>
+          			<option value="1.12.2">1.12.2</option>
+          			<option value="1.13">1.13</option>
+          			<option value="1.13.1">1.13.1</option>
+          			<option value="1.13.2">1.13.2</option>
+          			<option value="1.14">1.14</option>
+          			<option value="1.14.1">1.14.1</option>
+          			<option value="1.14.2">1.14.2</option>
+          			<option value="1.14.3">1.14.3</option>
+          			<option value="1.14.4">1.14.4</option>
+                <option value="1.15">1.15</option>
+                <option value="1.16">1.16</option>
+                <option value="1.16.1">1.16.1</option>
+                <option value="1.16.2">1.16.2</option>
+                <option value="1.16.3">1.16.3</option>
+                <option value="1.16.4">1.16.4</option>
+                <option value="1.16.5">1.16.5</option>
+                <option value="1.17">1.17</option>
+                <option value="1.17.1">1.17.1</option>
+                <option value="1.18">1.18</option>
+                <option value="1.18.1">1.18.1</option>
+                <option value="1.18.2">1.18.2</option>
+              </select>
+            </div>
+            <div class="col-6 mb-3">
+              <label for="macro" class="form-label">Macro (leave empty if you dont want to use macro's on the bot)</label>
+              <input type="file" class="form-control" id="macro" accept=".txt">
+            </div>
+            <div class="col-6 mb-3">
+              <label for="onlinemode" class="form-label">Premium/Cracked Bots</label>
+              <select class="form-select" id="onlinemode" aria-label="">
+                <option value="cracked" selected>Cracked (requires only names)</option>
+          			<option value="mojang">Mojang (requires email:password)</option>
+                <option value="microsoft">Microsoft (requires email:password)</option>
+                <option value="thealtening">TheAltening (requires only alt token) [authserver]</option>
+              </select>
+            </div>
+            <div class="col-3 mb-3">
+              <label for="bots" class="form-label">Max Bots</label>
+              <input type="number" class="form-control" id="bots" value="1" min="1" required>
+            </div>
+            <div class="col-3 mb-3">
+              <label for="delay" class="form-label">Delay (in MS)</label>
+              <input type="number" class="form-control" id="delay" value="500" min="0" max="9999999999" required>
+            </div>
+          </div><br>
+          <div class="row">
+            <div class="col-3 mb-3">
+              <button type="submit" id="startbutton" class="btn btn-success w-100">Start</button>
+            </div>
+            <div class="col-3 mb-3">
+              <button type="submit" id="stopbutton" onclick="stopBots()" class="btn btn-danger w-100" disabled>Stop</button>
+            </div>
+            <div class="col-6 mb-3">
+              <button type="button" id="bmbutton" onclick="bot_manager()" class="btn btn-primary w-100" disabled>Open BotManager</button>
+            </div>
+          </div>
+      </form>
+
+  </div>
+  <script>
+    document.getElementById('submit').addEventListener('submit', submit);
+    function submit(e) {
+      e.preventDefault();
+      document.getElementById('startbutton').disabled = true;
+      document.getElementById('bmbutton').disabled = false;
+      var ip = document.getElementById("ip").value;
+      var port = document.getElementById("port").value;
+      try {
+        var alts = document.getElementById("alts").files[0].path;
+      } catch {
+        var alts = false;
+      }
+      try {
+        var proxy = document.getElementById("proxy").files[0].path;
+      } catch {
+        var proxy = false;
+      }
+      var version = document.getElementById("version").value;
+      try {
+        var macro = document.getElementById("macro").files[0].path;
+      } catch {
+        var macro = false;
+      }
+      var onlinemode = document.getElementById("onlinemode").value;
+      var count = document.getElementById("bots").value;
+      var delay = document.getElementById("delay").value;
+      //ipcRenderer.send('start_bots', ip, port, alts, proxy, version, macro, onlinemode, count, delay);
+      window.mainWindow.startBots(ip, port, alts, proxy, version, macro, onlinemode, count, delay);
+    }
+    function bot_manager() {
+      window.mainWindow.openBM();
+    }
+    function stopBots() {
+      //ipcRenderer.send('botm');
+      document.getElementById('stopbutton').disabled = true;
+      window.mainWindow.stopBots();
+      document.getElementById('bmbutton').disabled = true;
+      document.getElementById('startbutton').disabled = false;
+    }
+
+    window.mainWindow.receive("botsConnected", () => {
+      document.getElementById('stopbutton').disabled = false;
+    });
+  </script>
+  <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script>
+		window.$(".se-pre-con").delay(1250).fadeOut("slow");
+  </script>
+</body>
+</html>
