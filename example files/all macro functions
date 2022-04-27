@@ -1,0 +1,17 @@
+sleep=>5000
+disconnect=>y
+move=>136/70/251
+sleep=>4500
+chat=>i am a bot
+dig=>136/69/250
+dig=>136/69/251
+dig=>136/69/252
+sleep=>10000
+lookAt=>126/80/251
+sleep=>2500
+chat=>test
+attack=>136/70/256
+setQuickBarSlot=>3
+eat=>y
+sleep=>2000
+disconnect=>y
