@@ -2,19 +2,19 @@
 <head>
 <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 <link rel="stylesheet" href="assets/custom.css">
-<title>PeterBot V5.1-alpha01</title>
+<title>PeterBot V5.1-alpha02</title>
 </head>
 <body style="background-color: #212121; color: white"><div class="se-pre-con"></div>
   <div class="container">
     <br>
-    <h2>PeterBot V5.1-alpha01 - Minecraft Bot</h2>
+    <h2>PeterBot V5.1-alpha02 - Minecraft Bot</h2>
 	<p id="pb"><i>PeterBot still can have some bugs, if you find a bug contact me on my discord server</i></p>
   <script>
   async function checkPBVersion() {
     const url = 'https://raw.githubusercontent.com/peter12908/PeterBOT/master/version.txt'
     const response = await fetch(url);
     const data = await response.text();
-    if (!data.startsWith("5.1.0-alpha01")) {
+    if (!data.startsWith("5.1.0-alpha02")) {
       document.getElementById("pb").innerHTML = 'A newer Version of PeterBot is available. Download it at https://github.com/peter12908/PeterBOT';
     }
   }
