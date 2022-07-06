@@ -13,15 +13,16 @@ const ProxyAgent = require('proxy-agent');
 
 class Bot {
 
-    constructor(name, password, version, auth, ip, port, proxy, macro, authserver) {
+    constructor(name, password, version, auth, ip, port, proxy, macro, authserver, sessionserver) {
         this.name = name;
-		this.password = password;
-		this.version = version;
-		this.auth = auth;
-		this.ip = ip;
-		this.port = port;
-		this.proxy = proxy;
-		this.macro = macro;
+	this.password = password;
+	this.version = version;
+	this.auth = auth;
+	this.ip = ip;
+	this.port = port;
+	this.proxy = proxy;
+	this.macro = macro;
+	this.sessionserver = sessionserver;
         this.authserver = authserver;
         this.log = "";
         this.log += "Bot[" + this.name + "] ready\n";
@@ -79,7 +80,8 @@ class Bot {
                 version: this.version,
                 agent: agentVar,
                 auth: this.auth,
-                authServer: this.authserver
+                authServer: this.authserver,
+		sessionServer: this.sessionserver
             });
         } catch (e) {
             bot.log += "Bot[" + bot.name + "] just had an massive Error, which ain't good :(  | Error: "+e+"\n";
