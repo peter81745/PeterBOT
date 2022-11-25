@@ -35,7 +35,7 @@ In this File every currently avaiable Function for the Macro Module is used.
 
 ### Whats the Discord Link
 ```
-https://discord.gg/nATBt9Z4Fa
+https://discord.gg/gdnfYrDke4
 ```
 
 ### My Macro doesn't work
