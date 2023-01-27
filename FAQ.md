@@ -27,10 +27,9 @@ If you run it in Premium Mode, you need to create a file withe the format:
 email:password       1 line equals one account
 ```
 
-### Where is the Macro file used in the Video
+### Where is the Macro file
 ```
-https://pastebin.com/xLwwt0qb
-In this File every currently avaiable Function for the Macro Module is used.
+just create macro files in .txt format, u can find example macros in the "example files" folder on github
 ```
 
 ### Whats the Discord Link
@@ -40,7 +39,5 @@ https://discord.gg/gdnfYrDke4
 
 ### My Macro doesn't work
 ```
-Please make sure to use the correct file format. And verify there is no error
-in the json code, you can verify that the json code is working as intended
-by viewing it online in an "json viewer".
+Make sure you didn't make a typo, also check BotManager for errors
 ```
