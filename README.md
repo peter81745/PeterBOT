@@ -28,3 +28,5 @@ PeterBot a Minecraft Bot Tool
 <h3>Windows: <a href="https://workupload.com/file/zYTxdNcG">Download</a></h3>
 </body>
 </html>-->
+<h4>Screenshot</h4>
+<img width="542" alt="screenshot peterbot" src="https://user-images.githubusercontent.com/34831836/215156607-ed078bca-97bf-447f-b8ae-afff9ed7ceb0.png">
