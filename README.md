@@ -10,9 +10,9 @@ PeterBot a Minecraft Bot Tool
     <h3>Attention</h3>
     This Bot is made to be only used on your own server. Do not use this tool on another Server. This tool is made for testing the "own" Server!!!
     <Hr>
-<h2>PeterBot (Version 5.1.1-alpha03) [latest]</h2>
+<h2>PeterBot (Version 5.1.2-alpha01) [latest]</h2>
 <a href="https://www.youtube.com/watch?v=95oSpmI41tk"><img alt="YouTube Video Views" src="https://img.shields.io/youtube/views/95oSpmI41tk?style=social"></a>
-<h3>Windows: <a href="https://github.com/peter12908/PeterBOT/releases/download/5.1.1-alpha03/PeterBot-win32-x64.zip">Download</a></h3>
+<h3>Windows: <a href="https://github.com/peter12908/PeterBOT/releases/download/5.1.2-alpha01/PeterBot-win32-x64.zip">Download</a></h3>
 
 <!--<h2>PeterBot (Version 4.0-alpha)</h2>
 <a href="https://www.youtube.com/watch?v=G-uGHHArtXs"><img alt="YouTube Video Views" src="https://img.shields.io/youtube/views/G-uGHHArtXs?style=social"></a>
