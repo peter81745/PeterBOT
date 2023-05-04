@@ -18,6 +18,6 @@
   "scripts": {
     "start": "electron . --disable-gpu"
   },
-  "author": "peter12908",
+  "author": "peter81745",
   "license": "gpl-3.0"
 }
